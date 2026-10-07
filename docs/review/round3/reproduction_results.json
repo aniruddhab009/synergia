@@ -1,0 +1,171 @@
+{
+  "python": "3.12.14",
+  "bundle_sha256": "edb64e2652b1e75ef0f33c314fcf95ce44ad89e3239195a8c04762702090c76c",
+  "bundle_checksums": [
+    {
+      "path": "./COMMANDS.md",
+      "matches": true
+    },
+    {
+      "path": "./ENVIRONMENT.txt",
+      "matches": true
+    },
+    {
+      "path": "./compiler/catalogue.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc1_graph.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc1_proposal.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc2_graph.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc2_proposal.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc3_graph.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/uc3_proposal.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/world_S1.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/world_S2.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/examples/world_S3.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/ambiguous_silent_choice.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/cycle.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/invented_skill.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/missing_world_dependency.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/needs_clarification.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/offset_mismatch.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/out_of_range.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/place_conflict.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/schema_extra_field.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/unknown_reference.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/fixtures/unsupported_action.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/reference_validator.py",
+      "matches": true
+    },
+    {
+      "path": "./compiler/schemas/graph.schema.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/schemas/proposal.schema.json",
+      "matches": true
+    },
+    {
+      "path": "./compiler/validator_output.txt",
+      "matches": true
+    },
+    {
+      "path": "./physics/beam_probe.py",
+      "matches": true
+    },
+    {
+      "path": "./physics/beam_probe_v10_output.txt",
+      "matches": true
+    },
+    {
+      "path": "./physics/beam_probe_v11.py",
+      "matches": true
+    },
+    {
+      "path": "./physics/beam_v11_results.json",
+      "matches": true
+    },
+    {
+      "path": "./protocol/round2_fixtures.py",
+      "matches": true
+    },
+    {
+      "path": "./protocol/round2_fixtures_results.json",
+      "matches": true
+    },
+    {
+      "path": "./protocol/round_model.py",
+      "matches": true
+    },
+    {
+      "path": "./protocol/round_model_output.txt",
+      "matches": true
+    },
+    {
+      "path": "./protocol/round_model_run.txt",
+      "matches": true
+    }
+  ],
+  "original_source_changed": false,
+  "logical_fixtures": {
+    "count": 10,
+    "json_equal": true,
+    "command": "python3 protocol/round2_fixtures.py --out round2_fixtures_results.json"
+  },
+  "round_campaign": {
+    "runs": 600,
+    "rules": "v1.0, D_BID=500ms",
+    "stdout_byte_equal": true,
+    "stdout": "A_nominal    runs=100 all_tasks_done=100 mean_rounds=11.1 mean_aborted=0.00 blocked=0 stuck_endorsers=0 mean_msgs=242\nB_lossy      runs=100 all_tasks_done=100 mean_rounds=8.1 mean_aborted=1.02 blocked=0 stuck_endorsers=0 mean_msgs=222\nC_heavy      runs=100 all_tasks_done=100 mean_rounds=8.2 mean_aborted=4.77 blocked=0 stuck_endorsers=0 mean_msgs=332\nD_crash      runs=100 all_tasks_done=0 mean_rounds=14.4 mean_aborted=10.20 blocked=51 stuck_endorsers=49 mean_msgs=610\nE_partition  runs=100 all_tasks_done=0 mean_rounds=22.1 mean_aborted=14.00 blocked=70 stuck_endorsers=71 mean_msgs=848\nF_transient  runs=100 all_tasks_done=100 mean_rounds=17.0 mean_aborted=6.45 blocked=0 stuck_endorsers=0 mean_msgs=507\ninvariants I1, I2, I3 held in all runs (assertions would have raised otherwise)\n"
+  },
+  "physics": {
+    "status": "not_run",
+    "reason": "ERROR: Could not find a version that satisfies the requirement mujoco==3.15.0 (from versions: none)\nERROR: No matching distribution found for mujoco==3.15.0"
+  },
+  "compiler": {
+    "status": "not_run",
+    "reason": "ERROR: Could not find a version that satisfies the requirement jsonschema==4.26.0 (from versions: none)\nERROR: No matching distribution found for jsonschema==4.26.0"
+  },
+  "dependency_interpretation": "Pinned packages could not be obtained in this runtime. This is not evidence that those versions do not exist elsewhere."
+}

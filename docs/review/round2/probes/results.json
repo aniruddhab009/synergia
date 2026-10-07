@@ -1,0 +1,54 @@
+{
+  "scope": "Synthetic round-control model; no task, resource or physics validation.",
+  "enumerated_vote_visibility_states": 2197,
+  "round_profiles": {
+    "delay": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 100
+    },
+    "loss10": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 100
+    },
+    "loss40": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 98
+    },
+    "crash": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 0
+    },
+    "permanent_partition": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 0
+    },
+    "healing_partition": {
+      "runs": 100,
+      "all_live_agents_committed_four_rounds": 100
+    }
+  },
+  "counterexamples": {
+    "join_deadline": {
+      "first_bid_ms": 0,
+      "peer_joins_ms": 300,
+      "originator_aborts_ms": 500,
+      "peer_bid_arrives_ms": 600
+    },
+    "asymmetric_progress": {
+      "L": "P1_wait",
+      "R": "P2"
+    },
+    "lost_complete_effective_ready": [],
+    "uncertain_holder_old_quiescence": true,
+    "geometric_tilt_degrees_only": {
+      "5mm": 0.35810095336898323,
+      "45mm": 3.224589591704871
+    }
+  },
+  "limitations": [
+    "Not a reproduction of unavailable Opus code or its 600 runs.",
+    "No exhaustive interleaving or crash-recovery proof.",
+    "R1-R7 simulated with synthetic snapshots; R6 tested only on reached schedules.",
+    "No assertions of physical excursion bounds."
+  ]
+}
