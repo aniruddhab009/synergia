@@ -1,0 +1,82 @@
+{
+  "event_replay": {
+    "delivery_permutations_with_reverse_duplicates": 720,
+    "max_only_requests_for_hole": false,
+    "missing_sequence_numbers": [
+      2
+    ],
+    "contiguous_watermark_after_relay_repair": 3,
+    "events_retained_by_instance_only_key": 3,
+    "events_required_for_two_origins": 6,
+    "conflicting_identity_rejected": true,
+    "scope": "ordered storage only; no bus, authorization, full task reducer or actuator"
+  },
+  "boundary": {
+    "reachable_aggregate_states": 44,
+    "transitions": 104,
+    "installed_states": 1,
+    "unsafe_installations": 0,
+    "snapshot_only_counterexample": [
+      "freeze all",
+      "endorse inactive old graph",
+      "thaw after endorsement",
+      "new old-graph award resolves and holds resource",
+      "install revision using earlier certificate"
+    ],
+    "stale_graph_activation_rejected": true,
+    "scope": "persistent freeze lifecycle abstraction; no distributed knowledge or message-delay proof"
+  },
+  "phase_receipt": {
+    "trace": [
+      "L sends P1 done(seq=2); delivery lost",
+      "R P1 entered(seq=1) reaches L",
+      "C2 same-phase stop condition suppresses L done retransmission"
+    ],
+    "same_phase_is_receipt": false,
+    "explicit_origin_sequence_ack_keeps_retrying_until_received": true
+  },
+  "sealed_decision": {
+    "bundle_delivery_orders": 6,
+    "distinct_input_digest_and_output_pairs": 1,
+    "mixed_observation_revisions": [
+      8,
+      10,
+      7
+    ],
+    "scope": "sealed bids suffice for this deterministic choice, not world-state safety"
+  },
+  "original_F2_instrumentation": {
+    "first_aborts": {
+      "None": {
+        "first_abort_ms": 0,
+        "sample": null
+      },
+      "400": {
+        "first_abort_ms": 0,
+        "sample": null
+      }
+    },
+    "original_result": {
+      "v1.0_rules": {
+        "peak_sep_mm": 42.5,
+        "rigid_tilt_deg": 3.045,
+        "final_zL_mm": 0.0,
+        "final_zR_mm": 0.0
+      },
+      "v1.1_lead_cap": {
+        "peak_sep_mm": 5.0,
+        "rigid_tilt_deg": 0.358,
+        "final_zL_mm": 0.0,
+        "final_zR_mm": 0.0
+      },
+      "v1.1_lead_cap_pose_dropout_at_400ms": {
+        "peak_sep_mm": 5.0,
+        "rigid_tilt_deg": 0.358,
+        "final_zL_mm": 0.0,
+        "final_zR_mm": 0.0
+      },
+      "v1.1_commanded_bound_mm": 10.5,
+      "note": "kinematic reference only; perfect tracking; no contact dynamics"
+    }
+  }
+}
